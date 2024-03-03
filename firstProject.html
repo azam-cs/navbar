@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Fitness Website</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: rgb(227, 227, 227);
+      position: relative;
+    }
+    .logo-image img {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+    .navbar {
+      position: absolute;
+      top: 10px;
+      left: 200px;
+    }
+    .navbar li {
+      list-style: none;
+      display: inline-block;
+      margin: 5px;
+    }
+    .navbar li a {
+      text-decoration: none;
+      color: black;
+      padding: 16px 20px;
+    }
+    .navbar li a:hover {
+      color: rgb(85, 85, 85);
+      background-color: rgb(195, 194, 194);
+    }
+    .search-input {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+    }
+    .search-input .btn {
+      border: 1px solid black;
+      outline: none;
+      padding: 5px 15px;
+      margin: 0px 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      background-color: cyan;
+    }
+    .search-input .btn:hover {
+      background-color: lightcyan;
+    }
+    .submit-form {
+      margin: 70px 150px;
+      width: 400px;
+      text-align: center;
+    }
+    .submit-form input {
+      margin: 10px 10px;
+      width: 400px;
+      padding: 7px 7px;
+      border: 1px solid black;
+      outline: none;
+      border-radius: 30px;
+    }
+    .submit-form #submit-button {
+      border: 1px solid black;
+      padding: 7px 7px;
+      text-align: center;
+      background-color: cyan;
+      border-radius: 30px;
+    }
+    .submit-form #submit-button:hover {
+      cursor: pointer;
+      background-color: lightcyan;
+    }
+    .submit-form h2 {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="logo-image">
+        <img src="./logogr.png" />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="search-input">
+        <!-- <input type="search" name="mysearch" placeholder="Search here....." /> -->
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+
+    <form action="backend.php">
+      <footer class="submit-form">
+        <h2>SUBMIT FORM</h2>
+        <div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter yur email"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="gender"
+            placeholder="Enter your gender"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="number"
+            name="age"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+
+        <div>
+          <input type="submit" id="submit-button" value="Submit Now" />
+        </div>
+      </footer>
+    </form>
+  </body>
+</html>
